@@ -37,6 +37,9 @@ a:active{
     color: white;
     margin-right: 1vh;
 }
+.top-bar a{
+    color: white;
+}
 
 .logo-bar{
     display: table;
