@@ -99,7 +99,7 @@ a:active{
 .main-bar span{
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
+    max-width: 70%;
     text-align: center;
     opacity: 1.0;
 }
@@ -117,6 +117,17 @@ a:active{
     width: 100%;
     text-align: center;
     font-family:"Lato";
+}
+
+.content-box{
+    min-width: 30%;
+    height: 100%;
+    padding: 2%;
+    background-color: white;
+}
+
+.content-box address{
+    text-align: left;
 }
 
 
