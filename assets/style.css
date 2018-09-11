@@ -99,7 +99,7 @@ a:active{
 .main-bar span{
     display: table-cell;
     vertical-align: middle;
-    max-width: 70%;
+    width: 50%;
     text-align: center;
     opacity: 1.0;
 }
@@ -120,7 +120,8 @@ a:active{
 }
 
 .content-box{
-    min-width: 30%;
+    vertical-align: text-top;
+    width: 50%;
     height: 100%;
     padding: 2%;
     background-color: white;
@@ -128,6 +129,19 @@ a:active{
 
 .content-box address{
     text-align: left;
+}
+
+.content-box i{
+    padding: 2vh 12.5%;
+}
+
+.content-box i:hover{
+    background-color: burlywood;
+
+}
+
+.content-box a{
+    color: black;
 }
 
 
