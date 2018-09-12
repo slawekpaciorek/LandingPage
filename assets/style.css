@@ -104,6 +104,10 @@ a:active{
     opacity: 1.0;
 }
 
+.main-bar span.content-box{
+    vertical-align: top;
+}
+
 .main-bar h2{
     font-size:12vh;
     text-shadow: 2px 10px 10px black;
@@ -144,4 +148,25 @@ a:active{
     color: black;
 }
 
+.address{
+    padding: 0;
+}
+
+.address div{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.address div>div{
+    display: block;
+}
+
+.address div>div:first-of-type{
+    height: 5vh
+}
+
+.address div>div:last-of-type{
+    height: 15vh;
+}
 
