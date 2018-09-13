@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     text-decoration: none;
 }
 
-a:active{
+a:active {
     text-decoration: none;
 }
 
-.top-bar{
+.top-bar {
     display: table;
     width: 100%;
     height: 5vh;
@@ -27,66 +27,67 @@ a:active{
     text-align: right;
 }
 
-.top-bar span{
-    width:5px;
+.top-bar span {
+    width: 5px;
     display: table-cell;
     vertical-align: middle;
 }
 
-.top-bar span>i{
+.top-bar span > i {
     color: white;
     margin-right: 1vh;
 }
 
-.logo-bar{
+.logo-bar {
     display: table;
     height: 10vh;
     width: 100%;
 }
 
-.logo-bar span{
+.logo-bar span {
     display: table-cell;
     vertical-align: middle;
     font-size: 48px;
-    font-family: "Poiret One";   
+    font-family: "Poiret One";
     text-align: center;
 
 }
 
-.logo{
+.logo {
     border: solid 1px black;
     border-radius: 50%;
     width: 64px;
     margin: 0 auto;
-    
+
 }
 
-.menu-bar{
+.menu-bar {
     text-align: center;
 }
-.menu-bar ul{
+
+.menu-bar ul {
     list-style: none;
     height: 8vh;
     margin: 1vh auto;
     padding: 2vh;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
     font-family: "Poiret One";
     font-size: 24px;
     font-weight: 800;
     font-variant: small-caps;
     letter-spacing: 1px;
-    margin:0 3vh ;
-    
+    margin: 0 3vh;
+
 }
 
-.menu-bar li>a{
+.menu-bar li > a {
     color: black;
 }
 
-.main-bar{
+.main-bar {
     display: table;
     width: 100%;
     height: 80vh;
@@ -96,7 +97,8 @@ a:active{
     background-blend-mode: lighten;
     opacity: 0.8;
 }
-.main-bar span{
+
+.main-bar span {
     display: table-cell;
     vertical-align: middle;
     width: 50%;
@@ -104,69 +106,72 @@ a:active{
     opacity: 1.0;
 }
 
-.main-bar span.content-box{
+.main-bar span.content-box {
     vertical-align: top;
 }
 
-.main-bar h2{
-    font-size:12vh;
+.main-bar h2 {
+    font-size: 12vh;
     text-shadow: 2px 10px 10px black;
-    font-family:"Alfa Slab One";
+    font-family: "Alfa Slab One";
     color: white;
     margin-bottom: 3vh;
 }
 
-.bottom-bar{
+.bottom-bar {
     padding: 1vh;
     width: 100%;
     text-align: center;
-    font-family:"Lato";
+    font-family: "Lato";
 }
 
-.content-box{
+.content-box {
     vertical-align: text-top;
     width: 50%;
     height: 100%;
-    padding: 2%;
     background-color: white;
 }
 
-.content-box address{
-    text-align: left;
+.content-box a, .content-box div{
+    display: block;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    padding: 6vh 12.5%;    
+}
+.content-box i{
+    transition: transform 1s
 }
 
-.content-box i{
-    padding: 2vh 12.5%;
+.content-box a:hover , .content-box div:hover {
+    background-color: burlywood;
+    color: white;
 }
 
 .content-box i:hover{
-    background-color: burlywood;
-
+    transform: scale(1.4);
 }
 
-.content-box a{
+.content-box a, .content-box a{
     color: black;
 }
 
-.address{
-    padding: 0;
+.content-box h3, .content-box h5{
+    height: 10vh;
+    padding: 2.5vh 2vh;
+    margin: 0;
 }
 
-.address div{
-    display: inline-block;
-    text-align: center;
-    width: 33%;
+.content-box h3{
+    height: 10vh;
+    padding: 2.5vh 2vh;
 }
 
-.address div>div{
-    display: block;
-}
-
-.address div>div:first-of-type{
-    height: 5vh
-}
-
-.address div>div:last-of-type{
-    height: 15vh;
+.content-box h5{
+    height: 5vh;
+    padding: 1vh 2vh;
+    background-color: burlywood;
+    color: white;
+    margin-bottom: 5vh;
 }
 
