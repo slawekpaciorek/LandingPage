@@ -131,6 +131,9 @@ a:active {
     height: 100%;
     background-color: white;
 }
+#phoneContact{
+    text-align: center;    
+}
 
 .content-box a, .content-box div{
     display: block;
@@ -140,12 +143,11 @@ a:active {
     padding: 6vh 12.5%;    
 }
 .content-box i{
-    transition: transform 1s
+    transition: transform 1s;
 }
 
 .content-box a:hover , .content-box div:hover {
-    background-color: burlywood;
-    color: white;
+    background-color: whitesmoke;
 }
 
 .content-box i:hover{
@@ -170,8 +172,12 @@ a:active {
 .content-box h5{
     height: 5vh;
     padding: 1vh 2vh;
-    background-color: burlywood;
-    color: white;
     margin-bottom: 5vh;
+}
+
+#phoneContact span{
+   
+    display: block;
+    margin: auto;
 }
 
