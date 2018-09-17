@@ -136,7 +136,6 @@ a:active{
 }
 .content-box{
     height: 100%;
-    padding: 2%;
     background-color: white;
 }
 
@@ -156,10 +155,19 @@ a:active{
     color: black;
 }
 
+.content-box h3{
+    background-color: #51301f;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    padding: 2vh;
+    margin: 0;
+}
+
 .projects-box{
-    overflow: scroll;
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 .project{
     width: 100%;
@@ -183,11 +191,32 @@ a:active{
 }
 
 #project-1, #project-2, #project-3, #project-4{
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
+    background-size: 100%;
     width: 100%;
-    height: 90%;
+    height: 100%;
+}
+
+.project h4{
+    padding: 1vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #51301f;
+    color: white;
+}
+
+.project div>p{
+    width: 100%;
+    height: 100%;
+    background-color: #51301f;
+    opacity: 0.8;
+    color: white;
+    margin:0;
+    padding: 20% 10%;
+    font-size: 22px;
+    text-indent: 5%;
+    text-align: justify;
 }
 
 
