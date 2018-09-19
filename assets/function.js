@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
-//  Scripts for portfolio-subpage   
+//    Scripts for index
+    $('.info').find('button').on('click', function(){
+       $('.info').hide();
+    });
+    $('.cookieInfo').find('button').on('click', function(){
+       $('.cookieInfo').hide();
+    });
+
+//  Scripts for portfolio-subpage
     $("#2").hide();
     $("#3").hide();
     $("#4").hide();
@@ -14,8 +22,6 @@ $(document).ready(function() {
         $(this).children().toggle();
     });
 
-
-
     sliding();
 
 //   Scripts for contact-subpage
@@ -26,8 +32,8 @@ $(document).ready(function() {
         $(this).fadeOut(function(){
             $(this).next().fadeIn(function(){
                 $(this).on('click', function () {
-                    $(this).fadeOut();
-                    $(this).prev().fadeIn();
+                    $(this).fadeOut('fast');
+                    $(this).prev().fadeIn('slow');
                 });
             });
         });

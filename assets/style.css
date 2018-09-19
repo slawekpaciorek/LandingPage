@@ -14,6 +14,27 @@ a:visited {
 a:active {
     text-decoration: none;
 }
+.info{
+    position: absolute;
+    z-index: 100;
+    top:25vh;
+    left: 25%;
+    height: 50vh;
+    width: 50%;
+    padding: 15vh;
+    text-align: center;
+    background-color: white;
+    opacity: 0.8;
+}
+.cookieInfo{
+    position: absolute;
+    padding: 2vh;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: #FFFFFF;
+}
 .top-bar {
     display: table;
     width: 100%;
@@ -44,14 +65,12 @@ a:active {
     font-size: 48px;
     font-family: "Poiret One";
     text-align: center;
-
 }
 .logo {
     border: solid 1px black;
     border-radius: 50%;
     width: 64px;
     margin: 0 auto;
-
 }
 .menu-bar {
     text-align: center;
@@ -70,11 +89,9 @@ a:active {
     font-variant: small-caps;
     letter-spacing: 1px;
     margin: 0 3vh;
-
 }
 .menu li:hover{
     transform: scale(1.2);
-
 }
 .menu-bar li>a{
     color: black;
@@ -138,12 +155,12 @@ a:active {
     width: 70%;
     height: 12vh;
     margin: 3vh 2vh;
-    padding: 2.5vh 0;
+    padding: 3.5vh 0;
     box-shadow: 0 0 15px #ad8e83;
     color: black;
 }
 .content-box a:hover{
-    background-color: #ad8e83;
+    background-color: #735b4f;
     box-shadow: none;
 }
 .content-box i{
@@ -158,7 +175,7 @@ a:active {
     display: inline-block;
 }
 .phoneContact span:last-of-type{
-    padding: 1.5vh 0;
+    padding: 1vh 0;
     font-size: 28px;
     width: 100%;
     text-align: center;
@@ -176,12 +193,6 @@ a:active {
 #left, #right{
     transition: none;
     padding: 2vh 15%;
-}
-.project{
-    margin: auto;
-    width: 80%;
-    height: 80%;
-    text-align: center;
 }
 #project-1{
     background-image: url("images/images/EmployeeContractManager.png");
@@ -206,6 +217,13 @@ a:active {
     height: 100%;
     float: left;
 }
+.project {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    box-shadow: 0 0 15px #ad8e83;
+}
 .project h4{
     padding: 1vh;
     margin: 0;
@@ -213,21 +231,22 @@ a:active {
     background-color: #51301f;
     color: white;
 }
+.project div{
+    display: table;
+}
 .project div>p{
-    display: inline-block;
-    width: 80%;
-    height: 80%;
+    display: table-cell;
+    vertical-align: middle;
     background-color: #51301f;
     opacity: 0.9;
     color: white;
     margin:5%;
-    padding: 15vh 8%;
+    padding: 0 8%;
     font-size: 18px;
     text-indent: 5%;
     text-align: justify;
     line-height: 24px;
 }
-
 .project div>i{
     font-size: 5vh;
     padding:2vh;
@@ -250,4 +269,15 @@ a:active {
     color: limegreen;
     background-color: #51301f;
     font-weight: bolder;
+}
+.project div>p a:hover{
+    background-color:#51301f ;
+}
+
+.project span{
+    text-indent: 5%;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding: 3vh;
 }
