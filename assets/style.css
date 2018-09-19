@@ -157,7 +157,6 @@ a:active {
 .phoneContact span{
     display: inline-block;
 }
-
 .phoneContact span:last-of-type{
     padding: 1.5vh 0;
     font-size: 28px;
@@ -170,15 +169,25 @@ a:active {
     width: 100%;
     height: 90%;
 }
-.project{
-    width: 100%;
-    height: 100%;
+#left:hover, #right:hover{
+    transform: none;
+    color: #cf050a;
 }
-#project-2{
-    background-image: url("images/images/UserEngine.png");
+#left, #right{
+    transition: none;
+    padding: 2vh 15%;
+}
+.project{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    text-align: center;
 }
 #project-1{
     background-image: url("images/images/EmployeeContractManager.png");
+}
+#project-2{
+    background-image: url("images/images/UserEngine.png");
 }
 #project-3{
     background-image: url("images/images/fileanalyzer.png");
@@ -205,18 +214,40 @@ a:active {
     color: white;
 }
 .project div>p{
-    width: 100%;
-    height: 100%;
+    display: inline-block;
+    width: 80%;
+    height: 80%;
     background-color: #51301f;
-    opacity: 0.8;
+    opacity: 0.9;
     color: white;
-    margin:0;
-    padding: 15% 10%;
-    font-size: 22px;
+    margin:5%;
+    padding: 15vh 8%;
+    font-size: 18px;
     text-indent: 5%;
     text-align: justify;
+    line-height: 24px;
 }
+
 .project div>i{
-    vertical-align: bottom;
-    font-family: "Montserrat", sans-serif;
+    font-size: 5vh;
+    padding:2vh;
+    margin-top: 20vh;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.project div>i:hover{
+    transform: none;
+    background-color: #cf050a;
+}
+.project div>p a{
+    display: inline;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    color: limegreen;
+    background-color: #51301f;
+    font-weight: bolder;
 }

@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
 //  Scripts for portfolio-subpage   
+    $("#2").hide();
+    $("#3").hide();
+    $("#4").hide();
 
     let $portfolioDiv = $(".project>div");
     let $portfolioP = $(".project").find("div>p");
@@ -10,6 +13,8 @@ $(document).ready(function() {
     $portfolioDiv.on("click", function () {
         $(this).children().toggle();
     });
+
+
 
     sliding();
 
