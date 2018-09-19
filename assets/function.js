@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+//  Scripts for portfolio-subpage   
+  
     let $portfolioDiv = $(".project>div");
     let $portfolioP = $(".project").find("div>p");
 
@@ -10,7 +12,18 @@ $(document).ready(function(){
     });
 
     sliding();
+  
+//   Scripts for contact-subpage
+  
+    $('.phoneNumber').hide();
+    
+    $('#phoneContact').on('click', function(){
+       $('span.contactIcon').hide();
+        $('span.phoneNumber').show();
+    });
 });
+
+// External functions
 
 function sliding(){
     let sliderElements = [$("#1"), $("#2"), $("#3"), $("#4")];
