@@ -1,56 +1,72 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 //  Scripts for portfolio-subpage   
-  
+
     let $portfolioDiv = $(".project>div");
     let $portfolioP = $(".project").find("div>p");
 
     $portfolioP.hide();
 
-    $portfolioDiv.on("click", function(){
+    $portfolioDiv.on("click", function () {
         $(this).children().toggle();
     });
 
     sliding();
-  
+
 //   Scripts for contact-subpage
-  
+
     $('.phoneNumber').hide();
-    
-    $('#phoneContact').on('click', function(){
-       $('span.contactIcon').hide();
-        $('span.phoneNumber').show();
+
+    $('span.contactIcon').on('click', function () {
+        $(this).fadeOut(function(){
+            $(this).next().fadeIn(function(){
+                $(this).on('click', function () {
+                    $(this).fadeOut();
+                    $(this).prev().fadeIn();
+                });
+            });
+        });
     });
+
+    $('.content-box').children('a').on('mouseenter', function(){
+        $(this).css("color", "white");
+        $(this).on('mouseleave', function () {
+            $(this).css('color', 'black');
+        })
+
+    });
+
 });
 
 // External functions
 
-function sliding(){
+function sliding() {
     let sliderElements = [$("#1"), $("#2"), $("#3"), $("#4")];
-    let n=0;
-    let size = sliderElements.length -1;
-    $('#left').on('click',function(){
+    let n = 0;
+    let size = sliderElements.length - 1;
+    $('#left').on('click', function () {
         sliderElements[n].hide();
-        if(n===0) {
+        if (n === 0) {
             n = 3;
             sliderElements[n].show();
-        }else{
+        } else {
             sliderElements[n].prev().show();
             n--;
         }
     });
 
-    $('#right').on('click', function(){
+    $('#right').on('click', function () {
 
         sliderElements[n].hide();
-        if(n<size){
+        if (n < size) {
             sliderElements[n].next().show();
             n++;
         }
-        else{
-            n=0;
+        else {
+            n = 0;
             sliderElements[n].show();
         }
     });
-
 }
+
+
