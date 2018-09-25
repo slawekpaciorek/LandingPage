@@ -39,7 +39,7 @@ a:active {
     display: table;
     width: 100%;
     height: 5vh;
-    background-color: #835c46;
+    background-color: #000;
     text-align: right;
 }
 .top-bar span {
@@ -96,17 +96,35 @@ a:active {
 .menu-bar li>a{
     color: black;
 }
-.menu-bar li>a:hover{
-    color: darkred;
+.menu-bar li:first-of-type>a:hover{
+    color: red;
 }
-.menu-bar li > a {
-    color: black;
+.menu-bar li:first-of-type>a:activ{
+    color: red;
+}
+.menu-bar li:nth-of-type(2)>a:hover{
+    color: gold;
+}
+.menu-bar li:nth-of-type(2)>a:active{
+    color: gold;
+}
+.menu-bar li:nth-of-type(3)>a:hover{
+    color: green;
+}
+.menu-bar li:nth-of-type(3)>a:active{
+    color: green;
+}
+.menu-bar li:last-of-type>a:hover{
+    color:blue;
+}
+.menu-bar li:last-of-type>a:active{
+    color: blue;
 }
 .main-bar {
     display: table;
     width: 100%;
     height: 80vh;
-    background-image: url(images/images/Slawek_PSD_02_tlo.jpg);
+    background-image: url(images/images/background.jpg);
     background-size: cover;
     background-position: center;
     background-blend-mode: lighten;
@@ -115,7 +133,7 @@ a:active {
 .main-bar span {
     display: table-cell;
     vertical-align: middle;
-    width: 50%;
+    width: 65%;
     text-align: center;
     opacity: 1.0;
 }
@@ -123,8 +141,8 @@ a:active {
     vertical-align: top;
 }
 .main-bar h2{
-    font-size:12vh;
-    text-shadow: 2px 10px 10px black;
+    font-size:13vh;
+    text-shadow: 4px 12px 15px black;
     font-family:"Alfa Slab One", sans-serif;
 }
 .main-bar h2 {
@@ -156,11 +174,11 @@ a:active {
     height: 12vh;
     margin: 3vh 2vh;
     padding: 3.5vh 0;
-    box-shadow: 0 0 15px #ad8e83;
+    box-shadow: 0 0 15px black;
     color: black;
 }
 .content-box a:hover{
-    background-color: #735b4f;
+    background-color: black;
     box-shadow: none;
 }
 .content-box i{
@@ -170,7 +188,8 @@ a:active {
     transform: scale(1.2);
 }
 .phoneContact{
-    text-align: center;}
+    text-align: center;
+}
 .phoneContact span{
     display: inline-block;
 }
@@ -212,9 +231,9 @@ a:active {
 #project-4{
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 90%;
     float: left;
 }
 .project {
@@ -222,13 +241,13 @@ a:active {
     width: 80%;
     height: 80%;
     text-align: center;
-    box-shadow: 0 0 15px #ad8e83;
+    box-shadow: 0 0 15px black;
 }
 .project h4{
     padding: 1vh;
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: #51301f;
+    background-color: black;
     color: white;
 }
 .project div{
@@ -237,7 +256,7 @@ a:active {
 .project div>p{
     display: table-cell;
     vertical-align: middle;
-    background-color: #51301f;
+    background-color: black;
     opacity: 0.9;
     color: white;
     margin:5%;
@@ -267,11 +286,11 @@ a:active {
     padding: 0;
     margin: 0;
     color: limegreen;
-    background-color: #51301f;
+    background-color: black;
     font-weight: bolder;
 }
 .project div>p a:hover{
-    background-color:#51301f ;
+    background-color:#605d5c ;
 }
 
 .project span{
