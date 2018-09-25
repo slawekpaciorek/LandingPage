@@ -21,10 +21,11 @@ a:active {
     left: 25%;
     height: 50vh;
     width: 50%;
-    padding: 15vh;
+    padding: 15vh 5vh;
     text-align: center;
     background-color: white;
     opacity: 0.8;
+    font-size: 2vh;
 }
 .cookieInfo{
     position: absolute;
@@ -64,7 +65,7 @@ a:active {
 .logo-bar span {
     display: table-cell;
     vertical-align: middle;
-    font-size: 4vh;
+    font-size: 2vw;
     font-family: "Poiret One", sans-serif;
     text-align: center;
 }
@@ -90,7 +91,7 @@ a:active {
     font-weight: 800;
     font-variant: small-caps;
     letter-spacing: 1px;
-    margin: 0 3vh;
+    margin: 0 1.5vw;
 }
 .menu li:hover{
     transform: scale(1.2);
@@ -239,6 +240,7 @@ a:active {
     height: 80%;
     text-align: center;
     box-shadow: 0 0 15px black;
+    box-sizing: border-box;
 }
 .project h4{
     padding: 1vh;
@@ -259,7 +261,7 @@ a:active {
     color: white;
     margin:5%;
     padding: 0 8%;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     text-indent: 5%;
     text-align: justify;
     line-height: 1.4em;
@@ -291,11 +293,14 @@ a:active {
 .project div>p a:hover{
     background-color:#605d5c ;
 }
-
-.project span{
+.project span, .project p.description{
     text-indent: 5%;
     font-size: 2vh;
     font-family: "Montserrat", sans-serif;
     text-align: justify;
     padding: 3vh;
+}
+.description{
+    overflow-y: scroll;
+    height: 90%;
 }

@@ -46,6 +46,10 @@ $(document).ready(function() {
         })
 
     });
+    
+    if ((window.location.pathname=="/aboutme.html")){
+        $('.project').css('height', '60vh')
+    }
 
 });
 
